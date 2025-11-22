@@ -15,7 +15,7 @@ window.addEventListener('load', function(){
             this.height = height;
             this.groundMargin = 80;
             this.speed = 0;
-            this.maxSpeed = 1.5;
+            this.maxSpeed = 3;
             this.Background = new Background(this);
             this.player = new Player(this);
             this.input = new InputHandler(this);
@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
             this.score = 0;
             this.fontColor = 'black';
             this.time = 0;
-            this.maxTime = 100000;
+            this.maxTime = 30000;
             this.gameOver = false;
             this.player.currentState = this.player.states[0];
             this.player.currentState.enter();
